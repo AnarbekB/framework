@@ -1,7 +1,17 @@
 {
+  "name": "anarbek/framework",
+  "description": "Simple framework on Symfony components",
+  "keywords": ["framework", "anarbek", "symfony"],
+  "license": "MIT",
+  "type": "project",
   "require" :{
     "symfony/class-loader": "3.*",
     "symfony/http-foundation": "3.*",
     "symfony/routing": "^3.4"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers/date_helper.php"
+    ]
   }
 }
