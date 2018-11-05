@@ -1,17 +1,19 @@
 {
-  "name": "anarbek/framework",
-  "description": "Simple framework on Symfony components",
-  "keywords": ["framework", "anarbek", "symfony"],
+  "name": "anarbek/flite",
+  "description": "Simple framework for education",
+  "keywords": ["flite", "anarbek", "symfony"],
   "license": "MIT",
   "type": "project",
   "require" :{
+    "php": ">=7.2",
     "symfony/class-loader": "3.*",
     "symfony/http-foundation": "3.*",
-    "symfony/routing": "^3.4"
+    "symfony/routing": "^3.4",
+    "symfony/http-kernel": "^4.0"
   },
   "autoload": {
-    "files": [
-      "src/helpers/date_helper.php"
-    ]
+    "psr-4": {
+      "App\\": "src/"
+    }
   }
 }
