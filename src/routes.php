@@ -1,7 +1,6 @@
 <?php
 
 use Symfony\Component\Routing;
-use App\Controllers\DefaultController;
 
 $routes = new Routing\RouteCollection();
 
@@ -10,7 +9,7 @@ $routes->add(
     new Routing\Route(
         '/',
         [
-            '_controller' => [new DefaultController(), 'indexAction']
+            '_controller' => 'App\Controllers\DefaultController::indexAction'
         ]
     )
 );
